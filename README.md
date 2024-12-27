@@ -29,6 +29,8 @@ You will need:
 3. Plug in the hot plate to the "Normally Off" plug of the IoT Relay
 4. Put your pot on the hot plate and hang the temperature sensor inside, so the sensor is submerged (careful that the cable is not touching the hot plate)
 5. Turn the hot plate to it's max setting
-6. SSH to the Raspberry Pi and run `python temp_control.py` in the terminal. The hot plate should turn on and you should start seeing temperature readings in the terminal.
+6. SSH to the Raspberry Pi* and run `python temp_control.py` in the terminal. The hot plate should turn on and you should start seeing temperature readings in the terminal.
 7. By default, `temp_control.py` has a target simmer temperature of 82 deg C, but you can adjust the target temperature while the program is running by typing a new temperature in deg C in the terminal or by providing a command line argument like `python temp_control.py 75`
 8. Go for a bike ride, read a book, visit a friend, and know that your pot is being kept at a constant simmer! (NOTE! Keep the SSH terminal open and running!)
+
+* If you have not connected via SSH before, I recommend downloading the iPhone App PiHelper, or the Windows program PuTTY. Both devices (Raspberry Pi and phone/computer) must be on the same WiFi network. If in doubt, you can connect a keyboard and monitor to your Raspberry Pi and set your default network, which it will automatically join upon startup in the future. If you will be using Constant Simmer in a location with no internet, you can set your Raspberry Pi to [run `temp_control.py` upon startup](https://www.youtube.com/watch?v=Gl9HS7-H0mI).
